@@ -5,7 +5,14 @@
         <af:form id="f1" binding="#{backingBeanScope.backing_index.f1}">
             <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx" id="pt1"
                              binding="#{backingBeanScope.backing_index.pt1}">
-                <f:facet name="center"/>
+                <f:facet name="center">
+                    <af:panelCollection id="pc1" binding="#{backingBeanScope.backing_index.pc1}">
+                        <f:facet name="menus">
+                        </f:facet>
+                        <f:facet name="toolbar"/>
+                        <f:facet name="statusbar"/>
+                    </af:panelCollection>
+                </f:facet>
                 <f:facet name="header"></f:facet>
                 <f:facet name="end"/>
                 <f:facet name="start"/>
