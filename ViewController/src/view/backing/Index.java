@@ -3,11 +3,13 @@ package view.backing;
 import oracle.adf.view.rich.component.rich.RichDocument;
 import oracle.adf.view.rich.component.rich.RichForm;
 import oracle.adf.view.rich.component.rich.fragment.RichPageTemplate;
+import oracle.adf.view.rich.component.rich.output.RichPanelCollection;
 
 public class Index {
     private RichPageTemplate pt1;
     private RichForm f1;
     private RichDocument d1;
+    private RichPanelCollection pc1;
 
     public void setPt1(RichPageTemplate pt1) {
         this.pt1 = pt1;
@@ -31,5 +33,13 @@ public class Index {
 
     public RichDocument getD1() {
         return d1;
+    }
+
+    public void setPc1(RichPanelCollection pc1) {
+        this.pc1 = pc1;
+    }
+
+    public RichPanelCollection getPc1() {
+        return pc1;
     }
 }
